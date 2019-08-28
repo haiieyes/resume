@@ -83,3 +83,36 @@
     display: absolute;
     margin-left: -205px;
 }
+
+.port-links {
+    color: black;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.port-links:hover .port-text {
+    color: black;
+    text-decoration: none !important;
+    width: 100%;
+    transition-property: width;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    
+}
+
+.port-text {
+    /*border: 1px solid red;*/
+    max-width: fit-content;
+    background-color: yellow;
+    overflow: visable;
+    width: 0;
+    white-space: nowrap;
+    height: 90px;
+}
+
+#port-links-con {
+    margin-left: -80px;
+    margin-top: 40px;
+}
