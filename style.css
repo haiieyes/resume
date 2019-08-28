@@ -13,8 +13,46 @@
 
 #subtitle {
     font-family: 'Raleway', sans-serif;
+    font-size: 15px;
 }
 
 #connect {
     width: 20px;
+}
+
+.secthead {
+    font-family: 'Raleway';
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+#section1 {
+    background-color: #F89F41;
+}
+
+#section2 {
+    background-color: black;
+}
+
+#quote {
+    color: white;
+    font-family: 'Marck Script';
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#author {
+    color: white;
+    font-family: 'Raleway';
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+#quote-icon {
+    color: #F89F41;
+    font-family: 'Marck Script';
+    font-size: 30px;
+    text-align: center;
 }
