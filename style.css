@@ -7,7 +7,7 @@
 #title {
     color: white;
     font-family: 'Pacifico', cursive;
-    font-size: 90px;
+    font-size: 100px;
     text-shadow: 3px 3.5px rgb(0,0,0,.5);
 }
 
@@ -115,4 +115,34 @@ a {
 #port-links-con {
     margin-left: -80px;
     margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    #port {
+        background-image: none;
+    }
+    
+    #port-content {
+        display: absolute;
+        margin-left: -0px;
+    }
+    
+    #port-text {
+        white-space: wrap;
+    }
+    
+    .port-links:hover .port-text {
+        background-color: none;
+        transition-property: none;
+    }
+    
+    #port {
+        transform: scale(.5);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #port {
+        transform: scale(.25);
+    }
 }
