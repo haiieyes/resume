@@ -1,0 +1,20 @@
+#jumbo {
+    background-image: url(images/working-overtime.jpg);
+    background-size: cover;
+    background-position: 0% 50%;
+}
+
+#title {
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 90px;
+    text-shadow: 3px 3.5px rgb(0,0,0,.5);
+}
+
+#subtitle {
+    font-family: 'Raleway', sans-serif;
+}
+
+#connect {
+    width: 20px;
+}
