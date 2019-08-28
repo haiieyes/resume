@@ -56,3 +56,30 @@
     font-size: 30px;
     text-align: center;
 }
+
+#section3 {
+    background-color: #F89F41;
+}
+
+#port-title {
+    font-family: 'Raleway';
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+
+#port-con {
+    display: flex !important;
+    justify-content: flex-end;
+}
+
+#port {
+    width: 512px;
+    height: 768px;
+    background-image: url(images/computer.jpg);
+    background-size: cover;
+}
+
+#port-content {
+    display: absolute;
+    margin-left: -205px;
+}
