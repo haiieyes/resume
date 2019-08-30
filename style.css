@@ -1,3 +1,35 @@
+body {
+    background-color: black;
+}
+
+/* NAV */
+
+#navbar-stick {
+    height: 0;
+}
+
+.navbar {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.sticky {
+    position: sticky;
+    top: 15px;
+}
+
+#nav-link {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    opacity: .25;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+#nav-link:hover {
+    opacity: 1;
+}
+
 /* Jumbo */
 #jumbo {
     background-image: url(images/working-overtime.jpg);
@@ -166,6 +198,14 @@ a {
 #section7 {
     height: 100px;
     background-color: #F89F41;
+}
+
+#socials {
+    padding-top: 10px;
+}
+
+#socials a {
+    margin-left: 5px;
 }
 
 
