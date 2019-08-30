@@ -150,12 +150,17 @@ a {
 }
 
 #section6 {
-    height: 600px;
+    /*height: 600px;*/
     background-image: url(images/contact.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#contact-title {
+    color: white !important;
+    text-shadow: 3px 2.5px rgb(0, 0, 0, 0.5);
 }
 
 #section7 {
