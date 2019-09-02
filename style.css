@@ -88,16 +88,32 @@ body {
 
 @keyframes hiding-2 {
     0% {
-        display: relative; !important;
+        position: relative;
     }
     100% {
-        display: relative;;
+        position: absolute;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
     }
 }
 
 /* NAV */
 #navbar-stick {
     height: 0px;
+    opacity: 0;
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
 
 .navbar {
@@ -105,8 +121,7 @@ body {
     padding-right: 100px;
 }
 
-.sticky {
-    position: sticky;
+.sticky-top {
     top: 15px;
 }
 
@@ -343,7 +358,7 @@ a {
 .logo-img {
     transform: scale(0.75);
     position: relative;
-    /*z-index: 0;*/
+    z-index: 0;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
     animation-name: hiding-2;
     animation-delay: 2s;
