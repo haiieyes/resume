@@ -36,16 +36,32 @@ body {
     background-position: 0% 50%;
 }
 
+#title-con {
+    position: relative;
+    animation-name: fly-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+
 #title {
     color: white;
     font-family: 'Pacifico', cursive;
     font-size: 100px;
     text-shadow: 3px 3.5px rgb(0,0,0,.5);
+    animation-name: fly-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
 }
 
 #subtitle {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
+    animation-name: fly-in;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
 }
 
 #connect {
@@ -56,6 +72,10 @@ body {
     font-family: 'Raleway';
     letter-spacing: 4px;
     text-align: center;
+    animation-name: fly-in;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
 }
 
 /* Section 1 */
@@ -149,7 +169,7 @@ a {
 }
 
 #port-links-con {
-    margin-left: -80px;
+    margin-left: -170px;
     margin-top: 40px;
 }
 
@@ -220,10 +240,10 @@ a {
 }
 
 .logo-img {
+    transform: scale(0.75);
     position: absolute;
     z-index: 0;
-    box-shadow: 5px 5px black;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
 }
 
 #a1 {
@@ -272,9 +292,11 @@ a {
     display: flex;
     flex-direction: column;
     opacity: 0;
+    border-radius: 50%;
+    opacity: 0;
     transition-property: opacity;
     transition-duration: 1s;
-    border-radius: 50%;
+    transition-timing-function: ease-in-out;
 }
 
 .cursor:hover .level{
@@ -335,6 +357,10 @@ a {
     text-shadow: 3px 2.5px rgb(0, 0, 0, 0.5);
 }
 
+#section6 form input {
+    margin-bottom: 10px;
+}
+
 /* Section 7 */
 #section7 {
     height: 100px;
@@ -349,7 +375,19 @@ a {
     margin-left: 5px;
 }
 
+/* Animations */
 
+@keyframes fly-in {
+    0% {
+        margin-top: 20px;
+        opacity: 0;
+    }
+    
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
 
 
 @media screen and (max-width: 768px) {
