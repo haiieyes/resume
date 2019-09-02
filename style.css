@@ -3,9 +3,8 @@ body {
 }
 
 /* NAV */
-
 #navbar-stick {
-    height: 0;
+    height: 0px;
 }
 
 .navbar {
@@ -32,7 +31,7 @@ body {
 
 /* Jumbo */
 #jumbo {
-    background-image: url(images/working-overtime.jpg);
+    background-image: url(images/bg1.jpg);
     background-size: cover;
     background-position: 0% 50%;
 }
@@ -154,6 +153,7 @@ a {
     margin-top: 40px;
 }
 
+/* Section 4 */
 #section4 {
     width: 100%;
     height: 200px;
@@ -175,12 +175,152 @@ a {
     flex: 3;
 }
 
+/* Section 5 */
 #section5 {
-    height: 600px;
+    height: 700px;
     background-color: black;
     box-shadow: 0 8px 6px -6px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+#s5-con {
+    width: 80%;
+    height: 60%;
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#con-1 {
+    width: 100%;
+    height: 49%;
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+#con-2 {
+    width: 100%;
+    height: 49%;
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cursor {
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logo-img {
+    position: absolute;
+    z-index: 0;
+    box-shadow: 5px 5px black;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
+}
+
+#a1 {
+    /*border: 1px solid red;*/
+    width: 170px;
+    height: 170px;
+    background-color: #e65724;
+}
+
+#b1 {
+    /*border: 1px solid red;*/
+    width: 170px;
+    height: 170px;
+    background-color: #1C7CBC;
+}
+
+#c1 {
+    /*border: 1px solid red;*/
+    width: 170px;
+    height: 170px;
+    background-color: #E9D54C;
+}
+
+#a2 {
+    /*border: 1px solid red;*/
+    width: 170px;
+    height: 170px;
+    background-color: #3670A0;
+}
+
+#b2 {
+    /*border: 1px solid red;*/
+    width: 170px;
+    height: 170px;
+    background-color: #F8F8F8;
+}
+
+#c2 {
+    /*border: 1px solid red;*/
+    width: 170px;
+    height: 170px;
+    background-color: #092D1F;
+}
+
+.level {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+    border-radius: 50%;
+}
+
+.cursor:hover .level{
+    opacity: 1;
+}
+
+.green-1 {
+    /*border: 1px solid red;*/
+    z-index: 100;
+    height: 34px;
+    width: 100%;
+    background-color: #AEFFA6;
+    opacity: .30;
+}
+
+.green-2 {
+    z-index: 100;
+    height: 34px;
+    width: 100%;
+    background-color: #AEFFA6;
+    opacity: .50;
+}
+
+.green-3 {
+    z-index: 100;
+    height: 34px;
+    width: 100%;
+    background-color: #AEFFA6;
+    opacity: .75;
+}
+
+.green-4 {
+    z-index: 100;
+    height: 34px;
+    width: 100%;
+    background-color: #AEFFA6;
+    opacity: 1;
+}
+
+.blank-1 {
+    height: 34px;
+    width: 100%;
+}
+
+
+/* Section 6 */
 #section6 {
     /*height: 600px;*/
     background-image: url(images/contact.jpg);
@@ -195,13 +335,14 @@ a {
     text-shadow: 3px 2.5px rgb(0, 0, 0, 0.5);
 }
 
+/* Section 7 */
 #section7 {
     height: 100px;
     background-color: #F89F41;
 }
 
 #socials {
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 #socials a {
@@ -232,6 +373,43 @@ a {
     
     #port {
         transform: scale(.5);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #section5 {
+        /*border: 1px solid red;*/
+        height: 3000px;
+    }
+    
+    #s5-con {
+        height: 90%;
+    }
+    
+    #con-1 {
+        /*border: 1px solid red;*/
+        width: 100%;
+        height: 49%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    
+    #con-2 {
+        width: 100%;
+        height: 49%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #contact-title {
+        color: white !important;
+        font-size: 30px;
+        text-shadow: 3px 2.5px rgb(0, 0, 0, 0.5);
     }
 }
 
