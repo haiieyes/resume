@@ -116,11 +116,6 @@ body {
     animation-timing-function: ease-in-out;
 }
 
-.navbar {
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
 .sticky-top {
     top: 15px;
 }
