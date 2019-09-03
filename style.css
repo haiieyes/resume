@@ -308,12 +308,18 @@ a {
 
 /* Section 5 */
 #section5 {
-    height: 700px;
+    height: 900px;
     background-color: black;
     box-shadow: 0 8px 6px -6px black;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#skills-title {
+    color: white;
+    margin-bottom: 40px;
+    margin-top: -40px;
 }
 
 #s5-con {
@@ -458,8 +464,10 @@ a {
 
 /* Section 6 */
 #section6 {
-    /*height: 600px;*/
-    background-image: url(images/contact.jpg);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 700px;
+    background-image: url(images/contact.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
