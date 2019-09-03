@@ -47,15 +47,13 @@ If you try to submit the contact form with an invalid email address, there will 
 Furthermore, the 'required' attribute is added to the 'name,' 'email,' and 'message' fields, so if those fields are not filled in, the form will not submit. 
 If all field are valid, the page will reload. If an employer or recruiter is interested in contacting me, they will have to fill out all fields in order for the form to go through.
 
-All links will open in a new tab using 'target="_blank"' and the CV will download to your default folder for downloads on click using the 'download' attribute. 
 All links have been manually tested to ensure that they are pointing to the correct destination.
 
-By clicking on the links in the navbar, the scrollSpy effect will work regardless of whether or not you're viewing the sections in the same order they are listed in the dropdown navbar. 
+By clicking on the links in the navbar, it will bring you to the page section. 
 
-This site was tested across multiple browsers (Chrome, Safari, Internet Explorer, FireFox) and on multiple mobile devices (iPhone 4, 5, 7: Chrome and Safari, iPad, Samsung Galaxy) to ensure compatibility and responsiveness. 
-During the testing phase, I realized that ```background-attachment: fixed``` was not compatible with iOS browsers. 
-On Chrome and Safari in iOS, the background photos appeared zoomed-in and blurry. 
-To fix this, the ```background-attachment: scroll``` property value was added in a media query.
+This site was viewed on multiple mobile devices (iPhone 4, 5, 7: Chrome and Safari, iPad, Samsung Galaxy) via Chrome Inspect to ensure compatibility and responsiveness. 
+During this testing phase, I realized that the portfolio section will be sliced short.
+To fix this, the font-sizes were reduced and the image was removed in a media query.
 
 
 ## Deployment
