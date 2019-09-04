@@ -324,7 +324,7 @@ a {
 
 #s5-con {
     width: 80%;
-    height: 60%;
+    height: 70%;
     /*border: 1px solid red;*/
     display: flex;
     flex-direction: column;
@@ -528,6 +528,19 @@ a {
     
     #port {
         transform: scale(.5);
+    }
+    
+    #section3 {
+    height: 400px;
+    }
+    
+    #port-con {
+    justify-content: flex-end;
+    margin-top: -290px;
+    }
+    
+    .level {
+        opacity: .75;
     }
 }
 
