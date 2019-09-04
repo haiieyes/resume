@@ -72,6 +72,6 @@ All photos were taken from:
 ### Acknowledgements
 The Bootstrap components that I've used can be found [here](https://www.getbootstrap.com/docs/4.0/components/).
 
-Fonts used are from [Google Fonts](https://www.fonts.google.com).
+Fonts used are from [Google Fonts](https://fonts.google.com).
 
 **This is for educational use.** 
