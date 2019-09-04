@@ -52,6 +52,7 @@ By clicking on the links in the navbar, it will bring you to the page section.
 This site was viewed on multiple mobile devices (iPhone 4, 5, 7: Chrome and Safari, iPad, Samsung Galaxy) via Chrome Inspect to ensure compatibility and responsiveness. 
 During this testing phase, I realized that the portfolio section will be sliced short.
 To fix this, the font-sizes were reduced and the image was removed in a media query.
+I also realized that hover elements do not work in mobile. Thus, the elements made sense without hover during mobile responsiveness testing.
 
 
 ## Deployment
