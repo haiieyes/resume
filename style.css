@@ -178,7 +178,7 @@ body {
 }
 
 .secthead {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     letter-spacing: 4px;
     text-align: center;
     animation-name: fly-in;
@@ -209,7 +209,7 @@ body {
 
 #author {
     color: white;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 10px;
     letter-spacing: 4px;
     text-align: center;
@@ -228,7 +228,7 @@ body {
 }
 
 #port-title {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
     letter-spacing: -1px;
 }
