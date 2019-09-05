@@ -246,7 +246,6 @@ body {
 }
 
 #port-content {
-    display: absolute;
     margin-left: -205px;
     margin-top: 50px;
 }
@@ -273,7 +272,7 @@ a {
     /*border: 1px solid red;*/
     max-width: fit-content;
     background-color: yellow;
-    overflow: visable;
+    overflow: visible;
     width: 0;
     white-space: nowrap;
     height: 90px;
@@ -413,7 +412,6 @@ a {
     flex-direction: column;
     opacity: 0;
     border-radius: 50%;
-    opacity: 0;
     transition-property: opacity;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
@@ -513,7 +511,6 @@ a {
     }
     
     #port-content {
-        display: absolute;
         margin-left: -0px;
     }
     
