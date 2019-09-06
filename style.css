@@ -106,30 +106,98 @@ body {
 }
 
 /* NAV */
+#navcon {
+    z-index: 100;
+}
+
+.orange-font {
+    color: #F89F41;
+}
+
+.white-font {
+    color: white;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.nav-content {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-style {
+    font-size: 40px;
+}
+
+.icon-style:hover {
+    cursor: pointer;
+}
+
+#openNav {
+    opacity: .5;
+    transition-property: opacity;
+    transition-duration: .5s;
+}
+
+#openNav:hover {
+    opacity: 1;
+}
+
 #navbar-stick {
+    text-align: right;
     height: 0px;
     opacity: 0;
     animation-name: opacity;
     animation-duration: 1s;
-    animation-delay: 3s;
+    animation-delay: 4s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
 
-.sticky-top {
-    top: 15px;
+#hidNav {
+    text-align: right;
 }
 
-#nav-link {
-    color: white;
+.mtr {
+    padding-top: 50px;
+    padding-right: 50px;
+    
+}
+
+.nav-link-all {
+    color: #F89F41;
+    font-size: 60px;
     font-family: 'Raleway', sans-serif;
-    opacity: .25;
+    white-space: nowrap;
+    opacity: .5;
     transition-property: opacity;
-    transition-duration: 1s;
+    transition-duration: .5s;
 }
 
-#nav-link:hover {
+.nav-link-all .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.nav-link-all:hover {
     opacity: 1;
+    color: #F89F41;
 }
 
 /* Jumbo */
@@ -460,7 +528,6 @@ a {
     width: 100%;
 }
 
-
 /* Section 6 */
 #section6 {
     padding-top: 100px;
@@ -546,7 +613,7 @@ a {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
     #section5 {
         /*border: 1px solid red;*/
         height: 1400px;
@@ -592,13 +659,23 @@ a {
         font-size: 50px;
     }
     
-    #nav-link {
+    .nav-link-all {
         opacity: 1;
     }   
+    
+    .nav-link-all a {
+        font-size: 20px
+    }
+    
+    .nav-link-all .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
 
 @media screen and (max-width: 375px) {
-    #nav-link {
+    .nav-link-all {
         font-size: 10px;
     }    
         
@@ -606,3 +683,4 @@ a {
         transform: scale(.25);
     }
 }
+

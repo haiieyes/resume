@@ -71,4 +71,6 @@ The Bootstrap components that I've used can be found [here](https://www.getboots
 
 Fonts used are from [Google Fonts](https://fonts.google.com).
 
+Took inspiration for the fullscreen responsive menu from [here](https://mdbootstrap.com/snippets/jquery/marta-szymanska/766671)
+
 **This is for educational use.** 

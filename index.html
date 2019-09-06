@@ -13,34 +13,44 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway0&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
-
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c53d501a9c.js"></script>
+    
     <title>Hairi Ali</title>
   </head>
   
   <body>
-     
-    <div class='container-fluid pl-0 pr-0 sticky-top' id="navbar-stick">
       
       <!-- NAV -->
-      <nav class="navbar d-flex justify-content-end" id="navbar-bar">
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a id='nav-link' class="nav-link" href="#section1">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a id='nav-link' class="nav-link" href="#section3">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a id='nav-link' class="nav-link" href="#section5">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a id='nav-link' class="nav-link" href="#section6">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      
-    </div>
+      <div id='navcon' class='sticky-top'>
+        <!-- Hidden NAV -->
+        <div>
+          <div id="hidNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" id="closeNav">
+              <i class="fas orange-font fa-times icon-style mtr" style='padding-right: 70px;'></i>
+            </a>
+            <div class="nav-content">
+              <a class="nav-link-all" href="#section1">About Me</a>
+              <a class="nav-link-all" href="#section3">Portfolio</a>
+              <a class="nav-link-all" href="#section5">Skills</a>
+              <a class="nav-link-all" href="#section6">Contact</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Visable Nav -->
+        <div id='navbar-stick'>
+          <div class="action-btn sticky mtr">
+            <a class="btn-floating btn-lg" id="openNav">
+              <i class="fas white-font fa-bars icon-style"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     
+    <main>
+      
     <div class='container-fluid pl-0 pr-0' id='body-con'>
       
       <div id='loads-con'>
@@ -238,11 +248,24 @@
       </div>
       
     </div>
+    
+    </main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- JavaScript for Navigation -->
+    <script>
+    $('#openNav').on('click', function() {
+      $('#hidNav').css("width", "100%");
+    });
+
+    $('#closeNav').on('click', function() {
+      $('#hidNav').css("width", "0%");
+    });
+    </script>
   </body>
 </html>
