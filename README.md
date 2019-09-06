@@ -60,9 +60,6 @@ This site is hosted using GitHub pages, deployed directly from the master branch
 
 ## Credits
 
-### Content
-All content in the "About Me" section in this site were written by me. 
-
 ### Media
 All photos were taken from: 
 [Pexels](https://www.pexels.com/),
