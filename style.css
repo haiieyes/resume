@@ -163,7 +163,7 @@ body {
     opacity: 0;
     animation-name: opacity;
     animation-duration: 1s;
-    animation-delay: 4s;
+    animation-delay: 3.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
@@ -180,7 +180,7 @@ body {
 
 .nav-link-all {
     color: #F89F41;
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Raleway', sans-serif;
     white-space: nowrap;
     opacity: .5;
@@ -377,7 +377,9 @@ a {
 /* Section 5 */
 #section5 {
     height: 900px;
-    background-color: black;
+    /*background-color: black;*/
+    background-image: url(images/bg2.png);
+    background-size: cover;
     box-shadow: 0 8px 6px -6px black;
     display: flex;
     justify-content: center;
